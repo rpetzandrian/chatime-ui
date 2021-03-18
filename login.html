@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chatime Login" />
+    <meta name="keywords" content="chatime login" />
+    <meta name="author" content="Rico Andrian" />
+    <title>Login</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Start Content -->
+    <main class="container-fluid container-custom">
+      <div class="row justify-content-center align-content-center h-100">
+        <div class="col-12 col-sm-5 col-md-3 card card-custom px-5">
+          <!-- Start Form Header -->
+          <div class="d-flex align-items-center mb-35 mt-42">
+            <h3 class="text-center form-header mx-auto">Login</h3>
+          </div>
+          <!-- End Form Header -->
+          <div class="form-content mx-auto">
+            <p class="form-text mb-35">Hi, Welcome back!</p>
+
+            <!-- Start Form -->
+            <form>
+              <div class="mb-35">
+                <label
+                  for="phone-input"
+                  class="form-label text-secondary label-custom mb-1"
+                  >Email</label
+                >
+                <input
+                  id="email-input"
+                  type="email"
+                  class="form-control form-custom"
+                  placeholder="Insert an email"
+                />
+              </div>
+              <div class="mb-35">
+                <label
+                  for="phone-input"
+                  class="form-label text-secondary label-custom mb-1"
+                  >Password</label
+                >
+                <input
+                  id="password-input"
+                  type="password"
+                  class="form-control form-custom"
+                  placeholder="Insert a password"
+                />
+                <img
+                  id="hidden-password"
+                  class="float-end"
+                  src="assets/images/ic_sharp-remove-red-eye.svg"
+                  alt="hidden"
+                />
+              </div>
+              <!-- Forgot Password -->
+              <a
+                class="text-blue float-end text-decoration-none mb-35"
+                href="forgot.html"
+                >Forgot Pasword ?</a
+              >
+              <!-- End Forgot Password -->
+            </form>
+            <!-- End Form -->
+
+            <!-- Button -->
+            <button type="submit" class="btn btn-custom-primary mb-35">
+              Login
+            </button>
+            <div
+              class="hr-custom text-secondary d-flex justify-content-between align-content-center"
+            >
+              <span></span>
+              <p class="mb-35 text-center">Login with</p>
+              <span></span>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-custom-secondary mb-35 text-center"
+            >
+              <img
+                class="me-3"
+                width="25px"
+                height="25px"
+                src="./assets/images/bx_bxl-google.svg"
+                alt="Gmail"
+              />
+              Google
+            </button>
+            <!-- End Button -->
+          </div>
+          <!-- Sign up -->
+          <span class="mb-35 text-center"
+            >Don't have an account?
+            <a class="text-blue text-decoration-none" href="register.html"
+              >Sign Up</a
+            ></span
+          >
+          <!-- End Sign Up -->
+        </div>
+      </div>
+    </main>
+    <!-- End Content -->
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
