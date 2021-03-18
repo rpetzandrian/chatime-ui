@@ -68,6 +68,11 @@ body {
 .back-button {
   width: 7.5px;
   height: 15px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(2);
+  }
 }
 
 .form-label {
@@ -86,14 +91,17 @@ body {
     outline: 0;
     box-shadow: none;
     border-color: none;
+    border-color: $color1;
   }
 }
 
 #hidden-password {
   margin-top: -30px;
+  transition: 0.3s;
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.5);
   }
 }
 
@@ -365,6 +373,21 @@ body {
   position: fixed;
   top: 80px;
   right: 10px;
+}
+
+.message-file {
+  position: fixed;
+  bottom: 80px;
+  right: 140px;
+  background-color: $color1;
+  width: 200px;
+  min-height: 200px;
+  border-radius: 35px 35px 10px 35px;
+}
+
+.message-file-md {
+  right: 80px;
+  bottom: 70px;
 }
 
 @media only screen and (min-height: 768px) {
