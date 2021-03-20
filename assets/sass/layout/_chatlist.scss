@@ -1,0 +1,110 @@
+@use '../utilities/variable' as variable;
+.chat-list {
+  width: 100%;
+
+  .status {
+    position: relative;
+    bottom: -30px;
+    left: -20px;
+    margin-right: -25px;
+  }
+
+  .chat-info {
+    .name {
+      font-weight: 500;
+      font-size: 18px;
+      color: variable.$color3;
+    }
+
+    .time {
+      font-size: 14px;
+      color: variable.$color4;
+    }
+
+    .text {
+      font-size: 14px;
+      color: variable.$color1;
+    }
+
+    .unread {
+      display: block;
+      width: 40px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 30px;
+      font-size: 12px;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: variable.$color1;
+      color: variable.$color2;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .chat-list {
+    .status {
+      position: relative;
+      bottom: -20px;
+      left: -20px;
+      margin-right: -25px;
+    }
+
+    .photo {
+      width: 64px;
+      height: 64px;
+    }
+
+    .chat-info {
+      .name {
+        font-weight: 500;
+        font-size: 16px;
+        color: variable.$color3;
+      }
+
+      .time {
+        font-size: 12px;
+        color: variable.$color4;
+      }
+
+      .text {
+        font-size: 12px;
+        color: variable.$color1;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 457px) {
+  .chat-list {
+    .status {
+      position: relative;
+      bottom: -20px;
+      left: -20px;
+      margin-right: -25px;
+    }
+
+    .photo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .chat-info {
+      .name {
+        font-weight: 500;
+        font-size: 16px;
+        color: variable.$color3;
+      }
+
+      .time {
+        font-size: 12px;
+        color: variable.$color4;
+      }
+
+      .text {
+        font-size: 12px;
+        color: variable.$color1;
+      }
+    }
+  }
+}

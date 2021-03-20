@@ -1,0 +1,35 @@
+@use '../utilities/variable' as variable;
+
+.btn {
+  width: 360px;
+  height: 60px;
+  border-radius: 70px;
+}
+
+.btn-custom-primary {
+  background-color: variable.$color1;
+  color: variable.$color2;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: variable.$color2;
+    border: 1px solid variable.$color1;
+    color: variable.$color1;
+  }
+}
+
+.btn-custom-secondary {
+  background-color: variable.$color2;
+  border: 1px solid variable.$color1;
+  color: variable.$color1;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: variable.$color1;
+    color: variable.$color2;
+  }
+}

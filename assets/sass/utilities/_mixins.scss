@@ -1,0 +1,18 @@
+@use './variable' as variable;
+@mixin font($size, $color, $weight: 400px) {
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin img($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin open-window($width, $height, $radius) {
+  background-color: variable.$color1;
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+}

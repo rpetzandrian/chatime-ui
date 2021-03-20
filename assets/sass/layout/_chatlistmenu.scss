@@ -1,0 +1,45 @@
+@use '../utilities/variable' as variable;
+@use '../utilities/mixins' as mix;
+
+.menu {
+  position: absolute;
+  z-index: 999;
+  top: 150px;
+  right: 60px;
+  width: 260px;
+  background-color: variable.$color1;
+  border-radius: 35px 10px 35px 35px;
+
+  .menu-list {
+    color: variable.$color2;
+    font-size: 16px;
+  }
+}
+
+.menu-mobile {
+  position: absolute;
+  right: 0;
+  z-index: 124;
+  height: 100vh;
+  width: 85%;
+  background-color: variable.$color2;
+
+  .profile {
+    color: variable.$color1;
+    font-weight: 500;
+    font-size: 32px;
+
+    img {
+      @include mix.img(82px, 82px);
+    }
+  }
+
+  .menu-list-mobile-img {
+    @include mix.img(22px, 22px);
+  }
+
+  .menu-list-mobile {
+    color: variable.$color1;
+    font-size: 22px;
+  }
+}

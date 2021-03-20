@@ -1,0 +1,22 @@
+@use './variable' as variable;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+.text-primary {
+  color: variable.$color3;
+}
+
+.text-secondary {
+  color: variable.$color4;
+}
+
+.text-blue {
+  color: variable.$color1;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-medium {
+  font-weight: 500;
+}
