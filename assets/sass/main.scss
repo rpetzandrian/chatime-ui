@@ -3,6 +3,9 @@
 @use './templates/splash';
 @use './templates/auth';
 @use './templates/chat';
+@use './layout/incomingcalls';
+@use './layout/callhistory';
+@use './layout/profile';
 
 body {
   background-color: #e5e5e5;

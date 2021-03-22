@@ -1,5 +1,5 @@
 @use './variable' as variable;
-@mixin font($size, $color, $weight: 400px) {
+@mixin font($size, $color, $weight: 400) {
   font-weight: $weight;
   font-size: $size;
   color: $color;
