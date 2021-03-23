@@ -165,8 +165,9 @@ nav {
 }
 
 .message-mobile {
-  max-height: 100vh;
+  height: 100vh;
   margin-top: 100px;
+  overflow-y: auto;
 
   .sender-img {
     @include mix.img(32px, 32px);

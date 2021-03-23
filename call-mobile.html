@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chatime chat" />
+    <meta name="keywords" content="chatime chat" />
+    <meta name="author" content="Rico Andrian" />
+    <title>Chat</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <main class="container-fluid container-custom mobile-bg">
+      <div class="row g-0 d-block d-md-none overflow-hidden">
+        <!-- Message Header Mobile -->
+        <header class="message-header-mobile">
+          <div class="row align-items-center bg-white py-2 ps-4">
+            <div class="col-10">
+              <div
+                class="chat-partner d-flex justify-content-start align-items-center"
+              >
+                <img
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="partner profile"
+                />
+                <div class="chat-partner-desc ms-4 pt-3">
+                  <h5 class="name-partner">Mother</h5>
+                  <p class="text-blue">Online</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <a class="" href="#">
+                <img
+                  class="menu-profile"
+                  width="18px"
+                  height="18px"
+                  src="assets/images/menu-profile.svg"
+                  alt="menu-profile"
+                />
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- End Message Header Mobile -->
+
+        <!-- Section Message -->
+        <section class="message message-mobile overflow-auto">
+          <div class="d-flex justify-content-start align-items-end mx-3 mt-3">
+            <div class="mx-3 message-block-left">
+              <p class="px-3 py-3">
+                Hi, son, how are you doing? Today, my father and I went to buy a
+                car, bought a cool car.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end align-items-start mx-3 mt-3">
+            <div class="mx-3 message-block-right">
+              <p class="px-3 py-3">Oh! Cool Send me photo)</p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+          >
+            <div class="mx-3 message-block-left">
+              <p class="px-3 py-3">Ok😉</p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+          >
+            <div class="mx-3 message-block-left">
+              <img class="message-img" src="assets/images/cars.png" alt="car" />
+              <p class="px-3 py-3">Will we arrive tomorrow?</p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-end align-items-start mx-3 mt-3 mb-2"
+          >
+            <div class="mx-3 message-block-right">
+              <p class="px-3 py-3">Oh! Cool Send me photo)</p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+          >
+            <div class="mx-3 message-block-left">
+              <p class="px-3 py-3">Thank you</p>
+            </div>
+          </div>
+        </section>
+        <!-- End Section Message -->
+
+        <!-- Form Message -->
+        <section
+          class="d-flex justify-content-center align-items-center form-message form-message-mobile"
+        >
+          <div class="input-group mb-3 mx-5">
+            <input
+              type="text"
+              class="form-control px-4 mt-3 input-message"
+              placeholder="Type your message..."
+              aria-label="Type your message..."
+            />
+            <div class="input-group-text mt-3 input-group-text-custom">
+              <div
+                class="d-none d-lg-flex justify-content-center float-end send-other"
+              >
+                <img
+                  class="mx-2"
+                  width="20px"
+                  height="20px"
+                  src="assets/images/Plus.svg"
+                  alt=""
+                />
+                <img
+                  class="mx-2"
+                  width="20px"
+                  height="20px"
+                  src="assets/images/emoticon.svg"
+                  alt=""
+                />
+                <img
+                  class="mx-2"
+                  width="20px"
+                  height="20px"
+                  src="assets/images/Rectangle 68.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flox d-lg-none justify-content-end float-end send-other"
+              >
+                <img
+                  class="mx-2"
+                  width="20px"
+                  height="20px"
+                  src="assets/images/Plus.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Form Message -->
+
+        <!-- Call -->
+        <section class="d-block d-md-none">
+          <div class="call-bg"></div>
+          <div class="call">
+            <img
+              class="img-bg"
+              src="assets/images/BackgroundCalls.svg"
+              alt="call-bg"
+            />
+            <div class="row justify-content-center mt-5">
+              <div class="col-12 d-flex justify-content-center">
+                <img
+                  class="caller-img"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <h2 class="text-medium text-white">Mother</h2>
+              <p class="text-white">03:12</p>
+            </div>
+            <div
+              class="col-12 w-100 d-flex justify-content-center align-item-center position-absolute call-action"
+            >
+              <a href="">
+                <img
+                  class="mx-4 mt-3"
+                  width="28px"
+                  height="28px"
+                  src="assets/images/ChatWhite.svg"
+                  alt="chat"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="mx-3"
+                  width="72px"
+                  height="72px"
+                  src="assets/images/To end the call.svg"
+                  alt="chat"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="mx-4 mt-3"
+                  width="28px"
+                  height="28px"
+                  src="assets/images/Speaker.svg"
+                  alt="chat"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- End Call -->
+      </div>
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

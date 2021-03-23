@@ -472,8 +472,9 @@ nav img {
 }
 
 .message-mobile {
-  max-height: 100vh;
+  height: 100vh;
   margin-top: 100px;
+  overflow-y: auto;
 }
 .message-mobile .sender-img {
   width: 32px;
@@ -703,6 +704,51 @@ nav img {
   font-weight: 400;
   font-size: 17px;
   color: #131313;
+}
+
+.call-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background-color: #131313;
+  opacity: 0.95;
+}
+
+.call {
+  position: absolute;
+  top: calc(50% - 320px);
+  left: calc(50% - 180px);
+  width: 360px;
+  height: 640px;
+  background-color: white;
+  z-index: 999;
+}
+.call .img-bg {
+  position: absolute;
+  width: 360px;
+  height: 640px;
+}
+.call .caller-img {
+  position: absolute;
+  top: 140px;
+  width: 157px;
+  height: 157px;
+}
+.call h2 {
+  position: absolute;
+  top: 320px;
+  font-size: 22px;
+}
+.call p {
+  position: absolute;
+  top: 345px;
+  font-size: 16px;
+}
+.call .call-action {
+  bottom: 100px;
 }
 
 body {

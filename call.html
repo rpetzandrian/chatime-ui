@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chatime chat" />
+    <meta name="keywords" content="chatime chat" />
+    <meta name="author" content="Rico Andrian" />
+    <title>Chat</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <main class="container-custom">
+      <div class="row g-0">
+        <div class="col-12 col-md-5 col-xl-4 px-3 bg-white leftside">
+          <!-- Navbar -->
+          <nav
+            class="navbar mt-42 mx-3 d-flex justify-content-between px-3 pt-2"
+          >
+            <p class="navbar-brand text-blue text-medium nav-brand-mobile">
+              Chatime
+            </p>
+            <div
+              class="d-flex float-end justify-content-evenly nav-icon-mobile"
+            >
+              <a class="float-end pb-2 mx-3 d-block d-md-none" href="#">
+                <img src="assets/images/Plus.svg" alt="menu button" />
+              </a>
+              <a class="float-end pb-2 mx-3 d-block d-md-none" href="#">
+                <img src="assets/images/Search.svg" alt="menu button" />
+              </a>
+              <a class="float-end pb-2 mx-3" href="#">
+                <img src="assets/images/Menu.svg" alt="menu button" />
+              </a>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+
+          <!-- Search large Device -->
+          <form
+            class="d-none d-md-flex align-items-center px-3 mx-3 mt-1 mb-35"
+            action=""
+          >
+            <div class="input-group search-form">
+              <div class="input-group-text input-prepend">
+                <img
+                  width="22px"
+                  height="22px"
+                  class="ms-2"
+                  src="assets/images/Search.svg"
+                  alt="Search icon"
+                />
+              </div>
+              <input
+                type="search"
+                name="message"
+                id="search-message"
+                placeholder="Type your message... "
+              />
+            </div>
+            <a href="" class="float-end">
+              <img
+                width="22px"
+                height="22px"
+                src="assets/images/Plus.svg"
+                alt="Add Chat"
+              />
+            </a>
+          </form>
+          <!-- End Search large Device -->
+
+          <!-- Sorting Chatlist -->
+          <ul
+            class="list-group list-group-horizontal justify-content-between mx-auto mb-35 mt-3 mt-md-0 px-3 sorting-list overflow-auto"
+          >
+            <li class="list-group-item mx-3 sort-item">All</li>
+            <li class="list-group-item mx-3 sort-item active">Important</li>
+            <li class="list-group-item mx-3 sort-item">Unread</li>
+            <li class="list-group-item mx-3 sort-item">Read</li>
+          </ul>
+          <!-- End Sorting Chatlist -->
+
+          <!-- Chatlist -->
+          <section class="chatlist">
+            <div
+              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            >
+              <div class="col-2 d-flex pb-3">
+                <img
+                  class="photo"
+                  src="assets/images/photo1.png"
+                  alt="Photo1"
+                />
+                <!-- <img
+                  width="24vw"
+                  class="status"
+                  src="assets/images/Online.svg"
+                  alt="onlie-status"
+                /> -->
+              </div>
+              <div class="col-10 chat-info">
+                <div class="row justify-content-between mx-4 mx-md-3">
+                  <div class="col-9 d-flex">
+                    <p class="name">Theresa Webb</p>
+                    <span class="ms-3">
+                      <img
+                        width="12px"
+                        height="12px"
+                        src="assets/images/Union.svg"
+                        alt="Pinned Chat"
+                    /></span>
+                  </div>
+                  <div class="col-3">
+                    <p class="time">15:20</p>
+                  </div>
+                  <div class="col-9">
+                    <p class="text">Why did you do that?</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="unread text-center">2</p>
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-unread.svg"
+                      alt="unread-checklist"
+                    /> -->
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-read.svg"
+                      alt="read-checklist"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            >
+              <div class="col-2 d-flex pb-3">
+                <img
+                  class="photo"
+                  src="assets/images/Rectangle 8-4.png"
+                  alt="Photo1"
+                />
+                <img
+                  width="24vw"
+                  class="status"
+                  src="assets/images/Online.svg"
+                  alt="onlie-status"
+                />
+              </div>
+              <div class="col-10 chat-info">
+                <div class="row justify-content-between mx-4 mx-md-3">
+                  <div class="col-9 d-flex">
+                    <p class="name">Calvin Flores</p>
+                    <!-- <span class="ms-3">
+                      <img
+                        width="12px"
+                        height="12px"
+                        src="assets/images/Union.svg"
+                        alt="Pinned Chat"
+                    /></span> -->
+                  </div>
+                  <div class="col-3">
+                    <p class="time">15:13</p>
+                  </div>
+                  <div class="col-9">
+                    <p class="text">Hi, bro! Come to my house!</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="unread text-center">1</p>
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-unread.svg"
+                      alt="unread-checklist"
+                    /> -->
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-read.svg"
+                      alt="read-checklist"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="row d-flex justify-content-start align-items-center mx-3 chat-list"
+            >
+              <div class="col-2 d-flex pb-3">
+                <img
+                  class="photo"
+                  src="assets/images/Rectangle 8-3.png"
+                  alt="Photo1"
+                />
+                <!-- <img
+                  width="24vw"
+                  class="status"
+                  src="assets/images/Online.svg"
+                  alt="onlie-status"
+                /> -->
+              </div>
+              <div class="col-10 chat-info">
+                <div class="row justify-content-between mx-4 mx-md-3">
+                  <div class="col-9 d-flex">
+                    <p class="name">Gregory Bell</p>
+                    <!-- <span class="ms-3">
+                      <img
+                        width="12px"
+                        height="12px"
+                        src="assets/images/Union.svg"
+                        alt="Pinned Chat"
+                    /></span> -->
+                  </div>
+                  <div class="col-3">
+                    <p class="time">15:13</p>
+                  </div>
+                  <div class="col-9">
+                    <p class="text">Will you stop ignoring me?</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="unread text-center">164</p>
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-unread.svg"
+                      alt="unread-checklist"
+                    /> -->
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-read.svg"
+                      alt="read-checklist"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            >
+              <div class="col-2 d-flex pb-3">
+                <img
+                  class="photo"
+                  src="assets/images/Rectangle 8-2.png"
+                  alt="Photo1"
+                />
+                <!-- <img
+                  width="24vw"
+                  class="status"
+                  src="assets/images/Online.svg"
+                  alt="onlie-status"
+                /> -->
+              </div>
+              <div class="col-10 chat-info">
+                <div class="row justify-content-between mx-4 mx-md-3">
+                  <div class="col-9 d-flex">
+                    <p class="name">Soham Henry</p>
+                    <span class="ms-3">
+                      <img
+                        width="12px"
+                        height="12px"
+                        src="assets/images/Union.svg"
+                        alt="Pinned Chat"
+                    /></span>
+                  </div>
+                  <div class="col-3">
+                    <p class="time">8:30</p>
+                  </div>
+                  <div class="col-9">
+                    <p class="text">Me: Bro, just fuck off</p>
+                  </div>
+                  <div class="col-3">
+                    <!-- <p class="unread text-center">23</p> -->
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-unread.svg"
+                      alt="unread-checklist"
+                    /> -->
+                    <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-read.svg"
+                      alt="read-checklist"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            >
+              <div class="col-2 d-flex pb-3">
+                <img
+                  class="photo"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="Photo1"
+                />
+                <img
+                  width="24vw"
+                  class="status"
+                  src="assets/images/Online.svg"
+                  alt="onlie-status"
+                />
+              </div>
+              <div class="col-10 chat-info">
+                <div class="row justify-content-between mx-4 mx-md-3">
+                  <div class="col-9 d-flex">
+                    <p class="name">Mother</p>
+                    <!-- <span class="ms-3">
+                      <img
+                        width="12px"
+                        height="12px"
+                        src="assets/images/Union.svg"
+                        alt="Pinned Chat"
+                    /></span> -->
+                  </div>
+                  <div class="col-3">
+                    <p class="time">7:20</p>
+                  </div>
+                  <div class="col-9">
+                    <p class="text">Me: Yes, of course come, ...</p>
+                  </div>
+                  <div class="col-3">
+                    <!-- <p class="unread text-center">23</p> -->
+                    <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-unread.svg"
+                      alt="unread-checklist"
+                    />
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-read.svg"
+                      alt="read-checklist"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            >
+              <div class="col-2 d-flex pb-3">
+                <img
+                  class="photo"
+                  src="assets/images/Rectangle 8.png"
+                  alt="Photo1"
+                />
+                <!-- <img
+                  width="24vw"
+                  class="status"
+                  src="assets/images/Online.svg"
+                  alt="onlie-status"
+                /> -->
+              </div>
+              <div class="col-10 chat-info">
+                <div class="row justify-content-between mx-4 mx-md-3">
+                  <div class="col-9 d-flex">
+                    <p class="name">Brother</p>
+                    <!-- <span class="ms-3">
+                      <img
+                        width="12px"
+                        height="12px"
+                        src="assets/images/Union.svg"
+                        alt="Pinned Chat"
+                    /></span> -->
+                  </div>
+                  <div class="col-3">
+                    <p class="time">Yesterday</p>
+                  </div>
+                  <div class="col-9">
+                    <p class="text">Ok. Good bay!</p>
+                  </div>
+                  <div class="col-3">
+                    <!-- <p class="unread text-center">23</p> -->
+                    <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-unread.svg"
+                      alt="unread-checklist"
+                    />
+                    <!-- <img
+                      width="20px"
+                      height="14px"
+                      src="assets/images/Checklist-read.svg"
+                      alt="read-checklist"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Chatlist -->
+        </div>
+
+        <!-- Right Side ( Message ) -->
+        <div
+          class="d-none d-md-block col-md-7 col-xl-8 overflow-hidden rightside"
+        >
+          <div class="chat-message">
+            <!-- Header -->
+            <header class="message-header">
+              <div class="row align-items-center bg-white py-2 ps-4">
+                <div class="col-md-10 col-lg-11">
+                  <div
+                    class="chat-partner d-flex justify-content-start align-items-center"
+                  >
+                    <img
+                      width="64px"
+                      src="assets/images/Rectangle 8-1.png"
+                      alt="partner profile"
+                    />
+                    <div class="chat-partner-desc ms-4">
+                      <h5 class="name-partner">Mother</h5>
+                      <p class="text-blue">Online</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-1">
+                  <a class="" href="#">
+                    <img
+                      class="menu-profile"
+                      width="22px"
+                      height="22px"
+                      src="assets/images/menu-profile.svg"
+                      alt="menu-profile"
+                    />
+                  </a>
+                </div>
+              </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Message ( chat ) -->
+            <section class="message overflow-auto">
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <p class="px-3 py-3">
+                    Hi, son, how are you doing? Today, my father and I went to
+                    buy a car, bought a cool car.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-end align-items-start mx-3 mt-3"
+              >
+                <div class="mx-3 message-block-right">
+                  <p class="px-3 py-3">Oh! Cool Send me photo)</p>
+                </div>
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/gloria.png"
+                  alt="sender-photo"
+                />
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <p class="px-3 py-3">Ok😉</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <img src="assets/images/cars.png" alt="car" />
+                  <p class="px-3 py-3">Will we arrive tomorrow?</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-end align-items-start mx-3 mt-3 mb-2"
+              >
+                <div class="mx-3 message-block-right">
+                  <p class="px-3 py-3">Oh! Cool Send me photo)</p>
+                </div>
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/gloria.png"
+                  alt="sender-photo"
+                />
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <p class="px-3 py-3">Thank you</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <p class="px-3 py-3">Thank you</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <p class="px-3 py-3">Thank you</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
+                  <p class="px-3 py-3">Thank you</p>
+                </div>
+              </div>
+            </section>
+            <!-- End Message ( chat ) -->
+
+            <!-- Form Message -->
+            <section
+              class="d-flex justify-content-center align-items-center form-message"
+            >
+              <div class="input-group mb-3 mx-5">
+                <input
+                  type="text"
+                  class="form-control px-4 mt-3 input-message"
+                  placeholder="Type your message..."
+                  aria-label="Type your message..."
+                />
+                <div class="input-group-text mt-3 input-group-text-custom">
+                  <div
+                    class="d-none d-lg-flex justify-content-center float-end send-other"
+                  >
+                    <img
+                      class="mx-2"
+                      width="20px"
+                      height="20px"
+                      src="assets/images/Plus.svg"
+                      alt=""
+                    />
+                    <img
+                      class="mx-2"
+                      width="20px"
+                      height="20px"
+                      src="assets/images/emoticon.svg"
+                      alt=""
+                    />
+                    <img
+                      class="mx-2"
+                      width="20px"
+                      height="20px"
+                      src="assets/images/Rectangle 68.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="d-flex d-lg-none justify-content-end float-end send-other"
+                  >
+                    <img
+                      class="mx-2"
+                      width="20px"
+                      height="20px"
+                      src="assets/images/Plus.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Form Message -->
+          </div>
+
+          <!-- Call -->
+          <section class="d-none d-md-block">
+            <div class="call-bg"></div>
+            <div class="call">
+              <img
+                class="img-bg"
+                src="assets/images/BackgroundCalls.svg"
+                alt="call-bg"
+              />
+              <div class="row justify-content-center mt-5">
+                <div class="col-12 d-flex justify-content-center">
+                  <img
+                    class="caller-img"
+                    src="assets/images/Rectangle 8-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <h2 class="text-medium text-white">Mother</h2>
+                <p class="text-white">03:12</p>
+              </div>
+              <div
+                class="col-12 w-100 d-flex justify-content-center align-item-center position-absolute call-action"
+              >
+                <a href="">
+                  <img
+                    class="mx-4 mt-3"
+                    width="28px"
+                    height="28px"
+                    src="assets/images/ChatWhite.svg"
+                    alt="chat"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    class="mx-3"
+                    width="72px"
+                    height="72px"
+                    src="assets/images/To end the call.svg"
+                    alt="chat"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    class="mx-4 mt-3"
+                    width="28px"
+                    height="28px"
+                    src="assets/images/Speaker.svg"
+                    alt="chat"
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- End Call -->
+        </div>
+      </div>
+      <!-- End Right Side ( Message ) -->
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
