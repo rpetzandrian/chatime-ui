@@ -24,7 +24,7 @@
     <main class="container-custom">
       <div class="row g-0">
         <!-- Leftside -->
-        <div class="col-12 col-md-5 col-xl-4 px-3 bg-white leftside">
+        <div class="d-none d-md-grid col-md-5 col-xl-4 px-3 bg-white leftside">
           <!-- Navbar -->
           <nav
             class="navbar mt-42 mx-3 d-flex justify-content-between px-3 pt-2"
@@ -35,13 +35,7 @@
             <div
               class="d-flex float-end justify-content-evenly nav-icon-mobile"
             >
-              <a class="float-end pb-2 mx-3 d-block d-md-none" href="#">
-                <img src="assets/images/Plus.svg" alt="menu button" />
-              </a>
-              <a class="float-end pb-2 mx-3 d-block d-md-none" href="#">
-                <img src="assets/images/Search.svg" alt="menu button" />
-              </a>
-              <a class="float-end pb-2 mx-3" href="#">
+              <a class="float-end pb-2 mx-3" href="menu.html">
                 <img src="assets/images/Menu.svg" alt="menu button" />
               </a>
             </div>
@@ -50,7 +44,7 @@
 
           <!-- Search large Device -->
           <form
-            class="d-none d-md-flex align-items-center px-3 mx-3 mt-1 mb-35"
+            class="d-flex align-items-center px-3 mx-3 mt-1 mb-35"
             action=""
           >
             <div class="input-group search-form">
@@ -70,7 +64,7 @@
                 placeholder="Type your message... "
               />
             </div>
-            <a href="" class="float-end">
+            <a href="plus.html" class="float-end">
               <img
                 width="22px"
                 height="22px"
@@ -94,8 +88,9 @@
 
           <!-- Chatlist -->
           <section class="chatlist">
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -145,9 +140,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -197,9 +193,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="row d-flex justify-content-start align-items-center mx-3 chat-list"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none row d-flex justify-content-start align-items-center mx-3 chat-list"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -249,9 +246,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -301,9 +299,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -353,9 +352,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -405,12 +405,12 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </section>
-          <!-- Chatlist -->
+          <!-- End Chatlist -->
 
           <!-- Profile -->
-          <section class="profile">
+          <section class="d-none d-md-block profile">
             <div class="row px-3 mx-3 mt-4 w-100">
               <div class="col-1">
                 <img class="back" src="assets/images/back.svg" alt="back" />
@@ -488,15 +488,92 @@
 
         <!-- End Leftside -->
 
+        <!-- Profile -->
+        <section class="d-block d-md-none profile">
+          <div class="row px-3 mx-3 mt-4 w-100">
+            <div class="col-1">
+              <img class="back" src="assets/images/back.svg" alt="back" />
+            </div>
+            <div class="text-center col-11">
+              <p class="username-title text-blue">@wdlam</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <img src="assets/images/gloria.png" alt="photo profile" />
+              <h3 class="mt-2">Gloria Mckinney</h3>
+              <p class="username">@wdlam</p>
+            </div>
+          </div>
+          <div class="row px-3 mx-3 mt-3">
+            <div class="col-12">
+              <h4 class="mt-2">Account</h4>
+              <p class="mt-3 phone">+375(29)9638433</p>
+              <a href="#" class="change-number text-blue text-decoration-none"
+                >Tap to change phone number</a
+              >
+            </div>
+            <hr class="mt-3 px-3" />
+          </div>
+          <div class="row px-3 mx-3 mt-3">
+            <div class="col-12">
+              <h4 class="mt-2">@wdlam</h4>
+              <p class="username">Username</p>
+            </div>
+            <hr class="mt-3 px-3" />
+          </div>
+          <div class="row px-3 mx-3 mt-3">
+            <div class="col-12">
+              <h4 class="mt-2">I’m Senior Frontend Developer from Microsoft</h4>
+              <p class="username">Bio</p>
+            </div>
+            <hr class="mt-3 px-3" />
+          </div>
+          <div class="row px-3 mx-3 mt-3 mb-2">
+            <div class="col-12">
+              <h4 class="mt-2">Settings</h4>
+              <div class="row">
+                <div class="col-12 d-flex">
+                  <img src="assets/images/Notif.svg" alt="Notif" />
+                  <p class="ms-3 pt-3 setting">Notification and Sounds</p>
+                </div>
+                <div class="col-12 d-flex">
+                  <img src="assets/images/Secret chat black.svg" alt="Secret" />
+                  <p class="ms-3 pt-3 setting">Privaty and Security</p>
+                </div>
+                <div class="col-12 d-flex">
+                  <img src="assets/images/datastorage.svg" alt="Data" />
+                  <p class="ms-3 pt-3 setting">Data and Stronge</p>
+                </div>
+                <div class="col-12 d-flex">
+                  <img src="assets/images/ChatBlack.svg" alt="Chat" />
+                  <p class="ms-3 pt-3 setting">Chat Settings</p>
+                </div>
+                <div class="col-12 d-flex">
+                  <img src="assets/images/Device.svg" alt="Device" />
+                  <p class="ms-3 pt-3 setting">Devices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Profile -->
+
         <!-- Right Side ( Message ) -->
-        <div
-          class="d-none d-md-block col-md-7 col-xl-8 overflow-hidden rightside"
-        >
+        <div class="col-12 col-md-7 col-xl-8 overflow-hidden rightside">
           <div class="chat-message">
             <!-- Header -->
             <header class="message-header">
               <div class="row align-items-center bg-white py-2 ps-4">
-                <div class="col-md-10 col-lg-11">
+                <div class="col-10 col-lg-11 d-flex">
+                  <a class="d-block d-md-none me-3 pt-3" href="chatlist.html">
+                    <img
+                      width="22px"
+                      height="22px"
+                      src="assets/images/back.svg"
+                      alt="back"
+                    />
+                  </a>
                   <div
                     class="chat-partner d-flex justify-content-start align-items-center"
                   >
@@ -511,7 +588,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col-lg-1">
+                <div class="col-2 col-lg-1">
                   <a class="" href="#">
                     <img
                       class="menu-profile"
@@ -532,6 +609,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -551,6 +629,7 @@
                   <p class="px-3 py-3">Oh! Cool Send me photo)</p>
                 </div>
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/gloria.png"
@@ -561,6 +640,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -574,6 +654,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -591,6 +672,7 @@
                   <p class="px-3 py-3">Oh! Cool Send me photo)</p>
                 </div>
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/gloria.png"
@@ -601,6 +683,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -614,6 +697,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -627,6 +711,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -640,6 +725,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"

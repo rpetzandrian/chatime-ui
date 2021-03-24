@@ -1,8 +1,8 @@
 @use '../utilities/variable' as variable;
 @use '../utilities/mixins' as mix;
 @use '../layout/chatlist';
-@use '../layout/chatlistmenu';
 @use '../layout/openwindow';
+@use '../layout/chatlistmenu';
 
 .leftside {
   position: relative;
@@ -219,6 +219,10 @@ nav {
   width: 200px;
   min-height: 200px;
   border-radius: 35px 35px 10px 35px;
+}
+
+.message-file-md {
+  right: 50px;
 }
 
 .message-file-sm {

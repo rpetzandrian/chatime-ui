@@ -23,7 +23,7 @@
   <body>
     <main class="container-custom">
       <div class="row g-0">
-        <div class="col-12 col-md-5 col-xl-4 px-3 bg-white leftside">
+        <div class="d-none d-md-grid col-md-5 col-xl-4 px-3 bg-white leftside">
           <!-- Navbar -->
           <nav
             class="navbar mt-42 mx-3 d-flex justify-content-between px-3 pt-2"
@@ -34,13 +34,7 @@
             <div
               class="d-flex float-end justify-content-evenly nav-icon-mobile"
             >
-              <a class="float-end pb-2 mx-3 d-block d-md-none" href="#">
-                <img src="assets/images/Plus.svg" alt="menu button" />
-              </a>
-              <a class="float-end pb-2 mx-3 d-block d-md-none" href="#">
-                <img src="assets/images/Search.svg" alt="menu button" />
-              </a>
-              <a class="float-end pb-2 mx-3" href="#">
+              <a class="float-end pb-2 mx-3" href="menu.html">
                 <img src="assets/images/Menu.svg" alt="menu button" />
               </a>
             </div>
@@ -49,7 +43,7 @@
 
           <!-- Search large Device -->
           <form
-            class="d-none d-md-flex align-items-center px-3 mx-3 mt-1 mb-35"
+            class="d-flex align-items-center px-3 mx-3 mt-1 mb-35"
             action=""
           >
             <div class="input-group search-form">
@@ -69,7 +63,7 @@
                 placeholder="Type your message... "
               />
             </div>
-            <a href="" class="float-end">
+            <a href="plus.html" class="float-end">
               <img
                 width="22px"
                 height="22px"
@@ -93,8 +87,9 @@
 
           <!-- Chatlist -->
           <section class="chatlist">
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -144,9 +139,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -196,9 +192,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="row d-flex justify-content-start align-items-center mx-3 chat-list"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none row d-flex justify-content-start align-items-center mx-3 chat-list"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -248,9 +245,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -300,9 +298,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -352,9 +351,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="chat-list row d-flex justify-content-start align-items-center mx-3"
+            </a>
+            <a
+              href="messages.html"
+              class="text-decoration-none chat-list row d-flex justify-content-start align-items-center mx-3"
             >
               <div class="col-2 d-flex pb-3">
                 <img
@@ -404,20 +404,26 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </section>
-          <!-- Chatlist -->
+          <!-- End Chatlist -->
         </div>
 
         <!-- Right Side ( Message ) -->
-        <div
-          class="d-none d-md-block col-md-7 col-xl-8 overflow-hidden rightside"
-        >
+        <div class="col-12 col-md-7 col-xl-8 overflow-hidden rightside">
           <div class="chat-message">
             <!-- Header -->
             <header class="message-header">
               <div class="row align-items-center bg-white py-2 ps-4">
-                <div class="col-md-10 col-lg-11">
+                <div class="col-10 col-lg-11 d-flex">
+                  <a class="d-block d-md-none me-3 pt-3" href="chatlist.html">
+                    <img
+                      width="22px"
+                      height="22px"
+                      src="assets/images/back.svg"
+                      alt="back"
+                    />
+                  </a>
                   <div
                     class="chat-partner d-flex justify-content-start align-items-center"
                   >
@@ -432,7 +438,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col-lg-1">
+                <div class="col-2 col-lg-1">
                   <a class="" href="#">
                     <img
                       class="menu-profile"
@@ -453,6 +459,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -472,6 +479,7 @@
                   <p class="px-3 py-3">Oh! Cool Send me photo)</p>
                 </div>
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/gloria.png"
@@ -482,6 +490,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -495,6 +504,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -512,6 +522,7 @@
                   <p class="px-3 py-3">Oh! Cool Send me photo)</p>
                 </div>
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/gloria.png"
@@ -522,6 +533,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -535,6 +547,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -548,6 +561,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -561,6 +575,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
