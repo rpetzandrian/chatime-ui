@@ -10,14 +10,11 @@ const urlLocal = [
   "http://127.0.0.1:5500/messages.html",
   "http://127.0.0.1:5500/messages-file.html",
   "http://127.0.0.1:5500/messages-profile.html",
-  "http://127.0.0.1:5500/messages-mobile.html",
-  "http://127.0.0.1:5500/messages-mobile-file.html",
-  "http://127.0.0.1:5500/messages-mobile-menu.html",
-  "http://127.0.0.1:5500/call-mobile.html",
   "http://127.0.0.1:5500/chatmessage-menu.html",
   "http://127.0.0.1:5500/incoming-calls.html",
   "http://127.0.0.1:5500/call.html",
   "http://127.0.0.1:5500/call-history.html",
+  "http://127.0.0.1:5500/call-mobile.html",
 ];
 
 const urlVercel = [
@@ -31,14 +28,11 @@ const urlVercel = [
   "https://chatime-ui.vercel.app/messages.html",
   "https://chatime-ui.vercel.app/messages-file.html",
   "https://chatime-ui.vercel.app/messages-profile.html",
-  "https://chatime-ui.vercel.app/messages-mobile.html",
-  "https://chatime-ui.vercel.app/messages-mobile-file.html",
-  "https://chatime-ui.vercel.app/messages-mobile-menu.html",
-  "https://chatime-ui.vercel.app/call-mobile.html",
   "https://chatime-ui.vercel.app/chatmessage-menu.html",
   "https://chatime-ui.vercel.app/incoming-calls.html",
   "https://chatime-ui.vercel.app/call.html",
   "https://chatime-ui.vercel.app/call-history.html",
+  "https://chatime-ui.vercel.app/call-mobile.html",
 ];
 
 for (let i = 0; i < urlLocal.length; i++) {
