@@ -184,6 +184,10 @@
   background-color: #2675ec;
   color: #ffffff;
 }
+.chat-list .editing {
+  width: 500px;
+  height: 100px;
+}
 
 @media only screen and (max-width: 992px) {
   .chat-list .status {
@@ -490,6 +494,12 @@ nav img {
   color: #131313;
   border-radius: 35px 10px 35px 35px;
 }
+.message-mobile .message-block-left-video {
+  max-width: 300px;
+  background-color: #2675ec;
+  color: #ffffff;
+  border-radius: 50%;
+}
 
 .message-header-mobile {
   position: fixed;
@@ -534,6 +544,63 @@ nav img {
 .message-file-sm p {
   color: #2675ec;
   font-size: 14px;
+}
+
+.send-image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35vh;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 8vh auto;
+  background-color: #ffffff;
+}
+.send-image p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.send-image .image {
+  width: 100%;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+.send-image .image::-webkit-scrollbar {
+  width: 1px;
+}
+
+.send-sticker {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35vh;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 12vh auto;
+  background-color: #ffffff;
+}
+.send-sticker p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.send-sticker .image {
+  width: 100%;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+.send-sticker .image::-webkit-scrollbar {
+  width: 1px;
+}
+.send-sticker .sticker-list {
+  margin-top: -30px;
+  max-width: calc(100vw - 50px);
+  overflow-x: auto;
+}
+.send-sticker .sticker-list .sticker-category {
+  border-radius: 50%;
+}
+.send-sticker .sticker-list .sticker-active {
+  border: 3px solid #2675ec;
 }
 
 @media only screen and (max-width: 1499.98px) {
@@ -600,7 +667,7 @@ nav img {
 }
 .incoming-calls .call-box {
   width: 360px;
-  height: 100%;
+  height: max-content;
   box-shadow: 0px 20px 20px rgba(126, 152, 223, 0.1);
   background-color: #ffffff;
   border-radius: 30px;

@@ -39,6 +39,10 @@
       color: variable.$color2;
     }
   }
+  .editing {
+    width: 500px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 992px) {

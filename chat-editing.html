@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <main class="container-custom">
+    <main class="container-fluid container-custom">
       <div class="row g-0">
         <div class="col-12 col-md-5 col-xl-4 px-3 bg-white leftside">
           <!-- Navbar -->
@@ -195,9 +195,9 @@
             </a>
             <a
               href="messages.html"
-              class="text-decoration-none row d-flex justify-content-start align-items-center mx-3 chat-list"
+              class="text-decoration-none d-flex justify-content-start align-items-center mx-3 chat-list"
             >
-              <div class="col-2 d-flex pb-3">
+              <div class="d-flex pb-3">
                 <img
                   class="photo"
                   src="assets/images/Rectangle 8-3.png"
@@ -210,7 +210,7 @@
                   alt="onlie-status"
                 /> -->
               </div>
-              <div class="col-10 chat-info">
+              <div class="chat-info">
                 <div class="row justify-content-between mx-4 mx-md-3">
                   <div class="col-9 d-flex">
                     <p class="name">Gregory Bell</p>
@@ -245,6 +245,9 @@
                   </div>
                 </div>
               </div>
+              <!-- <div class="bg-success editing">
+
+              </div> -->
             </a>
             <a
               href="messages.html"
@@ -407,282 +410,18 @@
             </a>
           </section>
           <!-- End Chatlist -->
-
-          <!-- Incoming Calls Sm -->
-          <div class="d-flex d-md-none justify-content-center incoming-calls">
-            <div class="row justify-content-center call-box">
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3">
-                <img src="assets/images/Rectangle 8-4.png" alt="caller" />
-                <p class="ms-2 pt-3 caller-from">
-                  <span>Calvin Flores</span> call you
-                </p>
-              </div>
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3 mb-3">
-                <div class="row">
-                  <div
-                    class="col-6 d-flex justify-content-center border-end response"
-                  >
-                    <img src="assets/images/reply.svg" alt="reply" />
-                    <p class="ms-2 text-green">Reply</p>
-                  </div>
-                  <div class="col-6 d-flex justify-content-center response">
-                    <img src="assets/images/rejected.svg" alt="rejected" />
-                    <p class="ms-2 text-red">Reject</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Incoming Calls Sm -->
         </div>
 
-        <!-- Right Side ( Message ) -->
         <div
-          class="d-none d-md-block col-md-7 col-xl-8 overflow-hidden rightside"
+          class="d-none d-md-block col-md-7 col-xl-8 overflow-hidden col-md-7 col-xl-8 rightside"
         >
-          <div class="chat-message">
-            <!-- Header -->
-            <header class="message-header">
-              <div class="row align-items-center bg-white py-2 ps-4">
-                <div class="col-md-10 col-lg-11">
-                  <div
-                    class="chat-partner d-flex justify-content-start align-items-center"
-                  >
-                    <img
-                      width="64px"
-                      src="assets/images/Rectangle 8-1.png"
-                      alt="partner profile"
-                    />
-                    <div class="chat-partner-desc ms-4">
-                      <h5 class="name-partner">Mother</h5>
-                      <p class="text-blue">Online</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 col-lg-1">
-                  <a class="" href="#">
-                    <img
-                      class="menu-profile"
-                      width="22px"
-                      height="22px"
-                      src="assets/images/menu-profile.svg"
-                      alt="menu-profile"
-                    />
-                  </a>
-                </div>
-              </div>
-            </header>
-            <!-- End Header -->
-
-            <!-- Message ( chat ) -->
-            <section class="message overflow-auto">
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <p class="px-3 py-3">
-                    Hi, son, how are you doing? Today, my father and I went to
-                    buy a car, bought a cool car.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-end align-items-start mx-3 mt-3"
-              >
-                <div class="mx-3 message-block-right">
-                  <p class="px-3 py-3">Oh! Cool Send me photo)</p>
-                </div>
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/gloria.png"
-                  alt="sender-photo"
-                />
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <p class="px-3 py-3">Ok😉</p>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <img src="assets/images/cars.png" alt="car" />
-                  <p class="px-3 py-3">Will we arrive tomorrow?</p>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-end align-items-start mx-3 mt-3 mb-2"
-              >
-                <div class="mx-3 message-block-right">
-                  <p class="px-3 py-3">Oh! Cool Send me photo)</p>
-                </div>
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/gloria.png"
-                  alt="sender-photo"
-                />
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <p class="px-3 py-3">Thank you</p>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <p class="px-3 py-3">Thank you</p>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <p class="px-3 py-3">Thank you</p>
-                </div>
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
-              >
-                <img
-                  width="45px"
-                  height="45px"
-                  src="assets/images/Rectangle 8-1.png"
-                  alt="sender-photo"
-                />
-                <div class="mx-3 message-block-left">
-                  <p class="px-3 py-3">Thank you</p>
-                </div>
-              </div>
-            </section>
-            <!-- End Message ( chat ) -->
-
-            <!-- Form Message -->
-            <section
-              class="d-flex justify-content-center align-items-center form-message"
-            >
-              <div class="input-group mb-3 mx-5">
-                <input
-                  type="text"
-                  class="form-control px-4 mt-3 input-message"
-                  placeholder="Type your message..."
-                  aria-label="Type your message..."
-                />
-                <div class="input-group-text mt-3 input-group-text-custom">
-                  <div
-                    class="d-none d-lg-flex justify-content-center float-end send-other"
-                  >
-                    <img
-                      class="mx-2"
-                      width="20px"
-                      height="20px"
-                      src="assets/images/Plus.svg"
-                      alt=""
-                    />
-                    <img
-                      class="mx-2"
-                      width="20px"
-                      height="20px"
-                      src="assets/images/emoticon.svg"
-                      alt=""
-                    />
-                    <img
-                      class="mx-2"
-                      width="20px"
-                      height="20px"
-                      src="assets/images/Rectangle 68.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="d-flex d-lg-none justify-content-end float-end send-other"
-                  >
-                    <img
-                      class="mx-2"
-                      width="20px"
-                      height="20px"
-                      src="assets/images/Plus.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- End Form Message -->
+          <div class="row w-100 h-100 align-content-center">
+            <p class="empty-chat text-secondary text-center">
+              Please select a chat to start messaging
+            </p>
           </div>
-
-          <!-- Incoming Call Desktop -->
-          <div class="d-none d-md-flex justify-content-center incoming-calls">
-            <div class="row justify-content-center call-box">
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3">
-                <img src="assets/images/Rectangle 8-4.png" alt="caller" />
-                <p class="ms-2 pt-3 caller-from">
-                  <span>Calvin Flores</span> call you
-                </p>
-              </div>
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3 mb-3">
-                <div class="row">
-                  <div
-                    class="col-6 d-flex justify-content-center border-end response"
-                  >
-                    <img src="assets/images/reply.svg" alt="reply" />
-                    <p class="ms-2 text-green">Reply</p>
-                  </div>
-                  <div class="col-6 d-flex justify-content-center response">
-                    <img src="assets/images/rejected.svg" alt="rejected" />
-                    <p class="ms-2 text-red">Reject</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Incoming Call Desktop -->
         </div>
       </div>
-      <!-- End Right Side ( Message ) -->
     </main>
 
     <!-- Bootstrap JS Bundle -->

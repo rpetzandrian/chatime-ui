@@ -23,7 +23,7 @@
   <body>
     <main class="container-custom">
       <div class="row g-0">
-        <div class="col-12 col-md-5 col-xl-4 px-3 bg-white leftside">
+        <div class="d-none d-md-grid col-md-5 col-xl-4 px-3 bg-white leftside">
           <!-- Navbar -->
           <nav
             class="navbar mt-42 mx-3 d-flex justify-content-between px-3 pt-2"
@@ -407,44 +407,23 @@
             </a>
           </section>
           <!-- End Chatlist -->
-
-          <!-- Incoming Calls Sm -->
-          <div class="d-flex d-md-none justify-content-center incoming-calls">
-            <div class="row justify-content-center call-box">
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3">
-                <img src="assets/images/Rectangle 8-4.png" alt="caller" />
-                <p class="ms-2 pt-3 caller-from">
-                  <span>Calvin Flores</span> call you
-                </p>
-              </div>
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3 mb-3">
-                <div class="row">
-                  <div
-                    class="col-6 d-flex justify-content-center border-end response"
-                  >
-                    <img src="assets/images/reply.svg" alt="reply" />
-                    <p class="ms-2 text-green">Reply</p>
-                  </div>
-                  <div class="col-6 d-flex justify-content-center response">
-                    <img src="assets/images/rejected.svg" alt="rejected" />
-                    <p class="ms-2 text-red">Reject</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Incoming Calls Sm -->
         </div>
 
         <!-- Right Side ( Message ) -->
-        <div
-          class="d-none d-md-block col-md-7 col-xl-8 overflow-hidden rightside"
-        >
+        <div class="col-12 col-md-7 col-xl-8 overflow-hidden rightside">
           <div class="chat-message">
             <!-- Header -->
             <header class="message-header">
               <div class="row align-items-center bg-white py-2 ps-4">
-                <div class="col-md-10 col-lg-11">
+                <div class="col-10 col-lg-11 d-flex">
+                  <a class="d-block d-md-none me-3 pt-3" href="chatlist.html">
+                    <img
+                      width="22px"
+                      height="22px"
+                      src="assets/images/back.svg"
+                      alt="back"
+                    />
+                  </a>
                   <div
                     class="chat-partner d-flex justify-content-start align-items-center"
                   >
@@ -459,7 +438,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-2 col-lg-1">
+                <div class="col-2 col-lg-1">
                   <a class="" href="#">
                     <img
                       class="menu-profile"
@@ -480,6 +459,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -499,6 +479,7 @@
                   <p class="px-3 py-3">Oh! Cool Send me photo)</p>
                 </div>
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/gloria.png"
@@ -509,6 +490,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -522,6 +504,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -539,6 +522,7 @@
                   <p class="px-3 py-3">Oh! Cool Send me photo)</p>
                 </div>
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/gloria.png"
@@ -549,6 +533,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -562,6 +547,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -575,6 +561,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -588,6 +575,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
+                  class="d-none d-lg-block"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -653,33 +641,108 @@
             </section>
             <!-- End Form Message -->
           </div>
-
-          <!-- Incoming Call Desktop -->
-          <div class="d-none d-md-flex justify-content-center incoming-calls">
-            <div class="row justify-content-center call-box">
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3">
-                <img src="assets/images/Rectangle 8-4.png" alt="caller" />
-                <p class="ms-2 pt-3 caller-from">
-                  <span>Calvin Flores</span> call you
-                </p>
-              </div>
-              <div class="col-12 d-flex justify-content-center mx-3 pt-3 mb-3">
-                <div class="row">
-                  <div
-                    class="col-6 d-flex justify-content-center border-end response"
-                  >
-                    <img src="assets/images/reply.svg" alt="reply" />
-                    <p class="ms-2 text-green">Reply</p>
-                  </div>
-                  <div class="col-6 d-flex justify-content-center response">
-                    <img src="assets/images/rejected.svg" alt="rejected" />
-                    <p class="ms-2 text-red">Reject</p>
-                  </div>
-                </div>
+          <!-- Send Images -->
+          <section class="send-sticker">
+            <div
+              class="w-100 row justify-content-between align-items-center pt-1 mx-3 sticky-top send"
+            >
+              <p class="col-12">Sticker</p>
+              <div class="col-12 mx-3 d-flex overflow-auto sticker-list">
+                <img
+                  width="36px"
+                  height="36px"
+                  class="me-4 sticker-category"
+                  src="assets/images/emoticon.svg"
+                  alt="Sticker"
+                />
+                <img
+                  width="36px"
+                  height="36px"
+                  class="me-4 sticker-category"
+                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
+                  alt=""
+                />
+                <img
+                  width="36px"
+                  height="36px"
+                  class="me-4 sticker-category sticker-active"
+                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
+                  alt=""
+                />
+                <img
+                  width="36px"
+                  height="36px"
+                  class="me-4 sticker-category"
+                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
+                  alt=""
+                />
+                <img
+                  width="36px"
+                  height="36px"
+                  class="me-4 sticker-category"
+                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
+                  alt=""
+                />
+                <img
+                  width="36px"
+                  height="36px"
+                  class="me-4 sticker-category"
+                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
+                  alt=""
+                />
               </div>
             </div>
-          </div>
-          <!-- End Incoming Call Desktop -->
+            <div
+              class="row row-cols-auto w-100 justify-content-center mx-0 mx-md-3 image"
+            >
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+              <div class="col mb-3 img">
+                <img src="assets/images/2 1.png" alt="send-img" />
+              </div>
+            </div>
+          </section>
+          <!-- End Send Images -->
         </div>
       </div>
       <!-- End Right Side ( Message ) -->
