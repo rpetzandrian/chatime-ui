@@ -422,7 +422,7 @@
         </div>
 
         <!-- Right Side ( Message ) -->
-        <div class="col-12 col-md-7 col-xl-8 overflow-hidden rightside">
+        <div class="col-12 col-md-7 col-xl-8 d-flex overflow-hidden rightside">
           <div class="chat-message">
             <!-- Header -->
             <header class="message-header">
@@ -477,12 +477,14 @@
                   src="assets/images/Rectangle 8-1.png"
                   alt="sender-photo"
                 />
+                <p class="d-block d-lg-none text-blue ms-4 pb-3">Sat. 03:40</p>
                 <div class="mx-3 message-block-left">
                   <p class="px-3 py-3">
                     Hi, son, how are you doing? Today, my father and I went to
                     buy a car, bought a cool car.
                   </p>
                 </div>
+                <p class="d-none d-lg-block text-blue ms-4 pb-3">Sat. 03:40</p>
               </div>
               <div
                 class="d-flex justify-content-end align-items-start mx-3 mt-3"
@@ -516,7 +518,7 @@
                 class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
               >
                 <img
-                  class="d-none d-lg-block"
+                  class="d-none d-lg-block invisible"
                   width="45px"
                   height="45px"
                   src="assets/images/Rectangle 8-1.png"
@@ -524,6 +526,19 @@
                 />
                 <div class="mx-3 message-block-left">
                   <img src="assets/images/cars.png" alt="car" />
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-start align-items-end mx-3 mt-3 mb-2"
+              >
+                <img
+                  class="d-none d-lg-block"
+                  width="45px"
+                  height="45px"
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="sender-photo"
+                />
+                <div class="mx-3 message-block-left">
                   <p class="px-3 py-3">Will we arrive tomorrow?</p>
                 </div>
               </div>
@@ -653,108 +668,189 @@
             </section>
             <!-- End Form Message -->
           </div>
-          <!-- Send Images -->
-          <section class="send-sticker">
-            <div
-              class="w-100 row justify-content-between align-items-center pt-1 mx-3 sticky-top send"
-            >
-              <p class="col-12">Sticker</p>
-              <div class="col-12 mx-3 d-flex overflow-auto sticker-list">
+
+          <!-- Contact Info -->
+          <section class="d-grid contact-info">
+            <div class="row justify-content-center px-3 mt-4 w-100">
+              <div class="col-2">
                 <img
-                  width="36px"
-                  height="36px"
-                  class="me-4 sticker-category"
-                  src="assets/images/emoticon.svg"
-                  alt="Sticker"
+                  width="22px"
+                  height="22px"
+                  class="back"
+                  src="assets/images/back.svg"
+                  alt="back"
                 />
+              </div>
+              <div class="text-center col-3">
+                <p class="username-title text-blue">@mmldolg</p>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-12 text-center">
                 <img
-                  width="36px"
-                  height="36px"
-                  class="me-4 sticker-category"
-                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
-                  alt=""
+                  src="assets/images/Rectangle 8-1.png"
+                  alt="photo profile"
                 />
-                <img
-                  width="36px"
-                  height="36px"
-                  class="me-4 sticker-category sticker-active"
-                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
-                  alt=""
-                />
-                <img
-                  width="36px"
-                  height="36px"
-                  class="me-4 sticker-category"
-                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
-                  alt=""
-                />
-                <img
-                  width="36px"
-                  height="36px"
-                  class="me-4 sticker-category"
-                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
-                  alt=""
-                />
-                <img
-                  width="36px"
-                  height="36px"
-                  class="me-4 sticker-category"
-                  src="assets/images/100-1002103_commissioned-telegram-stickers-furry-telegram-sticker 1.png"
-                  alt=""
-                />
+              </div>
+              <div class="col-12 d-flex justify-content-between mt-3 px-5">
+                <div class="user-info">
+                  <p class="name">Mother</p>
+                  <p class="status">Online</p>
+                </div>
+                <a class="pt-3" href="messages.html">
+                  <img
+                    width="24px"
+                    height="24px"
+                    src="assets/images/Chat.svg"
+                    alt="chat"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="row px-3 mx-3 mt-3">
+              <div class="col-12">
+                <h4 class="mt-2">Phone Number</h4>
+                <p class="mt-3 phone">+375(29)9239003</p>
+              </div>
+              <hr class="mt-3 px-3" />
+            </div>
+            <div class="row mt-3 ms-3 me-3 file-list">
+              <div class="col-4 text-center">
+                <p class="">Location</p>
+              </div>
+              <div class="col-4 text-center">
+                <p class="active">Image</p>
+              </div>
+              <div class="col-4 text-center">
+                <p class="">Document</p>
               </div>
             </div>
             <div
-              class="row row-cols-auto w-100 justify-content-center mx-0 mx-md-3 image"
+              class="row row-cols-auto justify-content-center ms-3 me-3 list"
             >
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
-              <div class="col mb-3 img">
-                <img src="assets/images/2 1.png" alt="send-img" />
+              <div class="col mb-3">
+                <img
+                  width="85px"
+                  height="85px"
+                  src="assets/images/Rectangle 38.png"
+                  alt="image"
+                />
               </div>
             </div>
           </section>
-          <!-- End Send Images -->
+          <!-- End Contact Info -->
         </div>
       </div>
       <!-- End Right Side ( Message ) -->
